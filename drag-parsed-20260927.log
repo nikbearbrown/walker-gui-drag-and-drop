@@ -1,0 +1,16 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS nine color buttons
+FAIL input starts drag
+FAIL drop copies source color
+PASS source color retained
+PASS release ends drag
+FAIL input starts drag
+FAIL drop copies source color
+PASS source color retained
+PASS release ends drag
+FAIL input starts drag
+FAIL drop copies source color
+PASS source color retained
+PASS release ends drag
+RESULT 13 checks, 6 failures; synthetic headless input only

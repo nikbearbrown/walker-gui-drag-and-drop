@@ -1,0 +1,44 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+GEOMETRY root=(1024, 600) scene=(1152.0, 675.0)
+ColorPickerButton0 [P: (360.0, 212.5), S: (96.0, 64.0)]
+ColorPickerButton1 [P: (528.0, 212.5), S: (96.0, 64.0)]
+ColorPickerButton2 [P: (696.0, 212.5), S: (96.0, 64.0)]
+ColorPickerButton3 [P: (360.0, 330.5), S: (96.0, 64.0)]
+ColorPickerButton4 [P: (528.0, 330.5), S: (96.0, 64.0)]
+ColorPickerButton5 [P: (696.0, 330.5), S: (96.0, 64.0)]
+ColorPickerButton6 [P: (360.0, 448.5), S: (96.0, 64.0)]
+ColorPickerButton7 [P: (528.0, 448.5), S: (96.0, 64.0)]
+ColorPickerButton8 [P: (696.0, 448.5), S: (96.0, 64.0)]
+PASS nine color buttons
+GUI ColorPickerButton0 Mouse motion at position ((48.0, 32.0)) with velocity ((0.0, 0.0))
+GUI ColorPickerButton0 Left Mouse Button
+GUI ColorPickerButton0 Mouse motion at position ((73.0, 32.0)) with velocity ((0.0, 0.0))
+PASS input starts drag
+GUI ColorPickerButton8 Mouse motion at position ((48.0, 32.0)) with velocity ((0.0, 0.0))
+PASS drop copies source color
+PASS source color retained
+PASS release ends drag
+GUI ColorPickerButton4 Mouse motion at position ((48.0, 32.0)) with velocity ((0.0, 0.0))
+GUI ColorPickerButton4 Left Mouse Button
+GUI ColorPickerButton4 Mouse motion at position ((73.0, 32.0)) with velocity ((0.0, 0.0))
+PASS input starts drag
+GUI ColorPickerButton2 Mouse motion at position ((48.0, 32.0)) with velocity ((0.0, 0.0))
+PASS drop copies source color
+PASS source color retained
+PASS release ends drag
+GUI ColorPickerButton6 Mouse motion at position ((48.0, 32.0)) with velocity ((0.0, 0.0))
+GUI ColorPickerButton6 Left Mouse Button
+GUI ColorPickerButton6 Mouse motion at position ((73.0, 32.0)) with velocity ((0.0, 0.0))
+PASS input starts drag
+GUI ColorPickerButton1 Mouse motion at position ((48.0, 32.0)) with velocity ((0.0, 0.0))
+PASS drop copies source color
+PASS source color retained
+PASS release ends drag
+GUI ColorPickerButton3 Mouse motion at position ((48.0, 32.0)) with velocity ((0.0, 0.0))
+GUI ColorPickerButton3 Left Mouse Button
+GUI ColorPickerButton3 Mouse motion at position ((73.0, 32.0)) with velocity ((0.0, 0.0))
+PASS empty-space test starts drag
+PASS empty-space release ends drag
+PASS empty-space drop preserves colors
+RESULT 16 checks, 0 failures; synthetic headless input only

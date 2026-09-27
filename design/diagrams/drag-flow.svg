@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="490" viewBox="0 0 1250 490" role="img" aria-labelledby="t d">
+<title id="t">Recovered drag state flow · drag and drop</title>
+<desc id="d">Idle swatches; press and move starts a drag with a preview; release over a swatch copies the color; release over empty space changes nothing; click opens the picker. IDs: M-01..M-05, F-01..F-04.</desc>
+<rect width="1250" height="490" fill="#faf9f5"/>
+<defs>
+<marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#25354a"/></marker>
+<marker id="p" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#d24e42"/></marker>
+</defs>
+<g font-family="Helvetica, Arial, sans-serif" fill="#25354a">
+<text x="32" y="44" font-size="26" font-weight="700">Recovered drag state flow · drag and drop</text>
+<text x="32" y="70" font-size="14" fill="#5b6b7c">Engine GUI drag system + three virtual methods in drag_drop_script.gd. No goal state exists.</text>
+<path d="M264 228 L376 192" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<text x="295" y="199" font-size="13" fill="#5b6b7c" text-anchor="middle" paint-order="stroke" stroke="#faf9f5" stroke-width="4">press + move</text>
+<path d="M664 143 L796 142" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<text x="750" y="136" font-size="13" fill="#5b6b7c" text-anchor="middle" paint-order="stroke" stroke="#faf9f5" stroke-width="4">release</text>
+<path d="M664 181 L804 216" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<text x="750" y="218" font-size="13" fill="#5b6b7c" text-anchor="middle" paint-order="stroke" stroke="#faf9f5" stroke-width="4">release</text>
+<path d="M264 297 L376 329" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<text x="305" y="312" font-size="13" fill="#5b6b7c" text-anchor="middle" paint-order="stroke" stroke="#faf9f5" stroke-width="4">click</text>
+<path d="M424 326 Q351 260 264 279" fill="none" stroke="#25354a" stroke-width="2" marker-end="url(#a)"/>
+<path d="M664 375 L796 379" fill="none" stroke="#d24e42" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#p)"/>
+<text x="750" y="364" font-size="13" fill="#d24e42" text-anchor="middle" paint-order="stroke" stroke="#faf9f5" stroke-width="4">nothing leads here</text>
+<rect x="40" y="220" width="220" height="90" rx="22" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="150" y="261" font-size="16" font-weight="700" fill="#25354a" text-anchor="middle">Nine swatches idle</text>
+<text x="150" y="279" font-size="13" fill="#5b6b7c" text-anchor="middle">drag_and_drop.tscn:42-111</text>
+<rect x="380" y="100" width="280" height="90" rx="22" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="520" y="132" font-size="16" font-weight="700" fill="#25354a" text-anchor="middle">Dragging a Color</text>
+<text x="520" y="150" font-size="13" fill="#5b6b7c" text-anchor="middle">_get_drag_data :6-21</text>
+<text x="520" y="168" font-size="13" fill="#5b6b7c" text-anchor="middle">80×50 preview follows cursor</text>
+<rect x="800" y="90" width="360" height="100" rx="8" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="980" y="118" font-size="16" font-weight="700" fill="#25354a" text-anchor="middle">Over a swatch: _can_drop_data</text>
+<text x="980" y="136" font-size="13" fill="#5b6b7c" text-anchor="middle">TYPE_COLOR → true · :26-27</text>
+<text x="980" y="154" font-size="13" fill="#5b6b7c" text-anchor="middle">_drop_data: color = data · source kept</text>
+<text x="980" y="172" font-size="13" fill="#5b6b7c" text-anchor="middle">→ back to idle</text>
+<rect x="800" y="220" width="360" height="80" rx="8" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="980" y="247" font-size="16" font-weight="700" fill="#25354a" text-anchor="middle">Over empty space</text>
+<text x="980" y="265" font-size="13" fill="#5b6b7c" text-anchor="middle">no target · nothing changes</text>
+<text x="980" y="283" font-size="13" fill="#5b6b7c" text-anchor="middle">→ back to idle</text>
+<rect x="380" y="330" width="280" height="80" rx="22" fill="#fffdf7" stroke="#25354a" stroke-width="2.5"/>
+<text x="520" y="357" font-size="16" font-weight="700" fill="#25354a" text-anchor="middle">Picker popup</text>
+<text x="520" y="375" font-size="13" fill="#5b6b7c" text-anchor="middle">built-in ColorPickerButton</text>
+<text x="520" y="393" font-size="13" fill="#5b6b7c" text-anchor="middle">UNVERIFIED</text>
+<rect x="800" y="350" width="360" height="70" rx="8" fill="#faf9f5" stroke="#5b6b7c" stroke-width="2.5" stroke-dasharray="8 6"/>
+<text x="980" y="381" font-size="16" font-weight="700" fill="#5b6b7c" text-anchor="middle">Goal / end state</text>
+<text x="980" y="399" font-size="13" fill="#5b6b7c" text-anchor="middle">[MISSING] Q-04, Q-05</text>
+<line x1="32" y1="464" x2="72" y2="464" stroke="#25354a" stroke-width="2.5"/><text x="80" y="468" font-size="13" fill="#5b6b7c">observed in code (solid)</text>
+<line x1="260" y1="464" x2="300" y2="464" stroke="#d24e42" stroke-width="2.5" stroke-dasharray="8 6"/><text x="308" y="468" font-size="13" fill="#5b6b7c">proposed / not in code (dashed)</text>
+<line x1="520" y1="464" x2="560" y2="464" stroke="#5b6b7c" stroke-width="2.5" stroke-dasharray="8 6"/><text x="568" y="468" font-size="13" fill="#5b6b7c">[MISSING] intent (grey dashed)</text>
+</g></svg>
